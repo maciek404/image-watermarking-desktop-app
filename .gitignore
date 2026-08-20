@@ -16,3 +16,7 @@ env/
 
 # Environment variables
 .env
+
+# PyInstaller
+build/
+dist/

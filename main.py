@@ -1,26 +1,26 @@
 import tkinter as tk
 from tkinter import filedialog, colorchooser, ttk
-from zoneinfo import reset_tzpath
+
 
 from PIL import Image, ImageTk, ImageDraw, ImageFont
 import os
 
 
 # DARK VERSION
-# BG_COLOR = "#252422"
-# PANEL_COLOR = "#403d39"
-# TEXT_COLOR = "#ccc5b9"
-# SECONDARY_TEXT = "#fffcf2"
-# ACCENT_COLOR = "#eb5e28"
-# BORDER_COLOR = "#403d39"
+BG_COLOR = "#252422"
+PANEL_COLOR = "#403d39"
+TEXT_COLOR = "#ccc5b9"
+SECONDARY_TEXT = "#fffcf2"
+ACCENT_COLOR = "#eb5e28"
+BORDER_COLOR = "#403d39"
 
 # LIGHT VERSION
-BG_COLOR = "#F5F5F5"
-PANEL_COLOR = "#FFFFFF"
-TEXT_COLOR = "#111111"
-SECONDARY_TEXT = "#6B6B6B"
-ACCENT_COLOR = "#b4b8ab"
-BORDER_COLOR = "#DCDCDC"
+# BG_COLOR = "#F5F5F5"
+# PANEL_COLOR = "#FFFFFF"
+# TEXT_COLOR = "#111111"
+# SECONDARY_TEXT = "#6B6B6B"
+# ACCENT_COLOR = "#b4b8ab"
+# BORDER_COLOR = "#DCDCDC"
 
 img_tk = None
 watermark_image = None
@@ -321,12 +321,6 @@ preview_frame.configure(highlightthickness=1, highlightbackground=BORDER_COLOR)
 preview_frame.pack(side='left', fill='both', expand=True)
 preview_frame.bind("<Configure>", lambda event: display_image())
 
-# separator = tk.Frame(
-#     main_frame,
-#     width=10,
-#     background=BORDER_COLOR,
-# )
-# separator.pack(side='left', fill='y')
 
 controls_frame = tk.Frame(main_frame, background=PANEL_COLOR, width=320)
 controls_frame.pack(side='right', fill='y')
@@ -334,12 +328,6 @@ controls_frame.pack_propagate(False)
 
     # PREVIEW
 
-# image_label = ttk.Label(
-#     preview_frame,
-#     text='No image selected',
-#     style='Preview.TLabel',
-# )
-# image_label.pack(expand=True)
 image_label = tk.Label(
     preview_frame,
     background=BG_COLOR,

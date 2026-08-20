@@ -1,26 +1,23 @@
 import tkinter as tk
 from tkinter import filedialog, colorchooser, ttk
-
-
 from PIL import Image, ImageTk, ImageDraw, ImageFont
 import os
 
-
 # DARK VERSION
-BG_COLOR = "#252422"
-PANEL_COLOR = "#403d39"
-TEXT_COLOR = "#ccc5b9"
-SECONDARY_TEXT = "#fffcf2"
-ACCENT_COLOR = "#eb5e28"
-BORDER_COLOR = "#403d39"
+# BG_COLOR = "#252422"
+# PANEL_COLOR = "#403d39"
+# TEXT_COLOR = "#ccc5b9"
+# SECONDARY_TEXT = "#fffcf2"
+# ACCENT_COLOR = "#eb5e28"
+# BORDER_COLOR = "#403d39"
 
 # LIGHT VERSION
-# BG_COLOR = "#F5F5F5"
-# PANEL_COLOR = "#FFFFFF"
-# TEXT_COLOR = "#111111"
-# SECONDARY_TEXT = "#6B6B6B"
-# ACCENT_COLOR = "#b4b8ab"
-# BORDER_COLOR = "#DCDCDC"
+BG_COLOR = "#F5F5F5"
+PANEL_COLOR = "#FFFFFF"
+TEXT_COLOR = "#111111"
+SECONDARY_TEXT = "#6B6B6B"
+ACCENT_COLOR = "#b4b8ab"
+BORDER_COLOR = "#DCDCDC"
 
 img_tk = None
 watermark_image = None
